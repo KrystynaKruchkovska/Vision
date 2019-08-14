@@ -13,7 +13,7 @@
         <!--CameraVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="Vision" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="VisionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXG-Xr-oRP" customClass="RoundedShadowView" customModule="Vision" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXG-Xr-oRP" customClass="RoundedShadowView" customModule="VisionApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="74" width="374" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-sl-1iL">
@@ -51,14 +51,14 @@
                                     <constraint firstAttribute="bottom" secondItem="zdw-sl-1iL" secondAttribute="bottom" constant="8" id="bFg-kI-4oe"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DVQ-0k-N4v" customClass="RoundedShadowImageView" customModule="Vision" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DVQ-0k-N4v" customClass="RoundedShadowImageView" customModule="VisionApp" customModuleProvider="target">
                                 <rect key="frame" x="319" y="714" width="75" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="3Cq-xV-gX4"/>
                                     <constraint firstAttribute="width" constant="75" id="fpL-7U-7qN"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-27-vo7" customClass="RoundedShadowButton" customModule="Vision" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-27-vo7" customClass="RoundedShadowButton" customModule="VisionApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="807" width="85" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -69,6 +69,9 @@
                                 <state key="normal" title="FLASH OFF">
                                     <color key="titleColor" red="1" green="0.15860175855135616" blue="0.086035389493237857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="flashBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4C-cA-hO2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

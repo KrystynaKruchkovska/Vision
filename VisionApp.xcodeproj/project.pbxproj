@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400499B230460B100A8E9CF /* FlashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400499A230460B100A8E9CF /* FlashState.swift */; };
 		04FAF8A5230311FF00EFBB5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAF8A4230311FF00EFBB5B /* AppDelegate.swift */; };
 		04FAF8A7230311FF00EFBB5B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAF8A6230311FF00EFBB5B /* CameraVC.swift */; };
 		04FAF8AA230311FF00EFBB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FAF8A8230311FF00EFBB5B /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0400499A230460B100A8E9CF /* FlashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlashState.swift; path = ../FlashState.swift; sourceTree = "<group>"; };
 		04FAF8A1230311FF00EFBB5B /* VisionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FAF8A4230311FF00EFBB5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FAF8A6230311FF00EFBB5B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0400499C230460B900A8E9CF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				0400499A230460B100A8E9CF /* FlashState.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		04FAF898230311FF00EFBB5B = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		04FAF8A3230311FF00EFBB5B /* VisionApp */ = {
 			isa = PBXGroup;
 			children = (
+				0400499C230460B900A8E9CF /* New Group */,
 				04FAF8DA2303199400EFBB5B /* Extensions */,
 				04FAF8D72303132700EFBB5B /* Resources */,
 				04FAF8D62303131B00EFBB5B /* Views */,
@@ -307,6 +318,7 @@
 			files = (
 				04FAF8A7230311FF00EFBB5B /* CameraVC.swift in Sources */,
 				04FAF8DC230319AE00EFBB5B /* UIView+Extensions.swift in Sources */,
+				0400499B230460B100A8E9CF /* FlashState.swift in Sources */,
 				04FAF8D92303175400EFBB5B /* RoundedShadowView.swift in Sources */,
 				04FAF8E523042A8C00EFBB5B /* SqueezeNet.mlmodel in Sources */,
 				04FAF8E023031A9400EFBB5B /* RoundedShadowImageView.swift in Sources */,

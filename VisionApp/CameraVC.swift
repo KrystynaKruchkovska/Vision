@@ -17,6 +17,7 @@ class CameraVC: UIViewController {
     var cameraOutput: AVCapturePhotoOutput!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var photoData: Data!
+    var flashControlState: FlashState = .off
     
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var identificationLbl: UILabel!
@@ -49,6 +50,13 @@ class CameraVC: UIViewController {
     @objc  func didTapCameraView() {
         let settings = AVCapturePhotoSettings()
         settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
+        
+        if flashControlState == .off {
+            settings.flashMode = .off
+        } else {
+            settings.flashMode = .on
+        }
+        
         cameraOutput.capturePhoto(with: settings, delegate: self)
     }
     
@@ -96,6 +104,16 @@ class CameraVC: UIViewController {
                 self.confidanceLbl.text = "CONFIDENCE: \(Int(classification.confidence * 100))%"
                 break
             }
+        }
+    }
+    @IBAction func flashBtnWasPressed(_ sender: UIButton) {
+        switch flashControlState {
+        case .off:
+            flashButton.setTitle("FLASH ON", for: .normal)
+            flashControlState = .on
+        case .on:
+            flashButton.setTitle("FLASH OFF", for: .normal)
+            flashControlState = .off
         }
     }
     
