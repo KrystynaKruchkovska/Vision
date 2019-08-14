@@ -58,6 +58,10 @@
                                     <constraint firstAttribute="width" constant="75" id="fpL-7U-7qN"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="OG3-c9-44I">
+                                <rect key="frame" x="346.5" y="768" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-27-vo7" customClass="RoundedShadowButton" customModule="VisionApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="807" width="85" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,8 +86,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cCP-ms-RYP" secondAttribute="trailing" id="DpB-jf-ZTr"/>
                             <constraint firstItem="RXG-Xr-oRP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="J8l-Eb-epI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tWd-27-vo7" secondAttribute="bottom" constant="20" id="KzI-ZM-eQH"/>
+                            <constraint firstItem="OG3-c9-44I" firstAttribute="centerY" secondItem="DVQ-0k-N4v" secondAttribute="centerY" id="Y6u-lQ-9Nz"/>
                             <constraint firstItem="tWd-27-vo7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YBB-iW-9ld"/>
                             <constraint firstItem="cCP-ms-RYP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z5Z-4l-RxU"/>
+                            <constraint firstItem="OG3-c9-44I" firstAttribute="centerX" secondItem="DVQ-0k-N4v" secondAttribute="centerX" id="i3Y-kZ-R3z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVQ-0k-N4v" secondAttribute="trailing" constant="20" id="i82-Vm-fcz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cCP-ms-RYP" secondAttribute="bottom" id="mnX-vB-c2r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DVQ-0k-N4v" secondAttribute="bottom" constant="20" id="xb8-WV-WKZ"/>
@@ -97,6 +103,7 @@
                         <outlet property="flashButton" destination="tWd-27-vo7" id="JgR-fg-Gvo"/>
                         <outlet property="identificationLbl" destination="JKc-n3-lHY" id="ZTt-Hg-f7l"/>
                         <outlet property="roundedLblView" destination="RXG-Xr-oRP" id="Iut-zl-egi"/>
+                        <outlet property="spineer" destination="OG3-c9-44I" id="0rv-qG-zUl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
